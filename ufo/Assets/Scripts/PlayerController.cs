@@ -9,11 +9,13 @@ public class PlayerController : MonoBehaviour
     public Text scoreText;
     public Text winText;
 
+
     // Start is called before the first frame update
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         score = 0;
+        AudioManager.instance.PlayMusic("Podkład");
     }
 
     // Update is called once per frame
